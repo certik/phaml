@@ -12,5 +12,4 @@ fi
 mkdir -p lib
 mkdir -p modules
 ./mkmkfile.sh PARLIB none GRAPHICS none PARALLEL sequential F90 gfortran C gcc
-export MAKEFLAGS=
 make
