@@ -1,0 +1,13 @@
+#! /bin/sh
+
+set -e
+
+if [ "$SPKG_LOCAL" = "" ]; then
+   echo "SPKG_LOCAL undefined ... exiting";
+   echo "Maybe run 'qsnake --shell'?"
+   exit 1
+fi
+
+./mkmkfile.sh PARLIB none GRAPHICS none PARALLEL sequential
+export MAKEFLAGS=
+make
