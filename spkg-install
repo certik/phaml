@@ -8,6 +8,6 @@ if [ "$SPKG_LOCAL" = "" ]; then
    exit 1
 fi
 
-./mkmkfile.sh PARLIB none GRAPHICS none PARALLEL sequential
+./mkmkfile.sh PARLIB none GRAPHICS none PARALLEL sequential F90 gfortran C gcc
 export MAKEFLAGS=
 make
